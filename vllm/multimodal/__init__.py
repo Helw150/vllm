@@ -29,3 +29,8 @@ __all__ = [
     "MULTIMODAL_REGISTRY",
     "MultiModalRegistry",
 ]
+
+# Register all multimodal models here.
+# Import processors to ensure they are registered with MULTIMODAL_REGISTRY
+from . import llava # noqa: F401
+from . import diva_processing # noqa: F401
